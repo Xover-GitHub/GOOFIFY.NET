@@ -225,3 +225,7 @@ html, body {
 #reducelag:hover {
     font-size: 22px;
 }
+
+.hidden {
+    display: none;
+}
