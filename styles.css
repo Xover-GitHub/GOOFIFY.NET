@@ -1,0 +1,227 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: rgba(1, 1, 1, 0.85);
+
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#BGvideo {
+    position: fixed; /* Fixes the video in place */
+    right: 0;
+    bottom: 0;
+    min-width: 100%; /* Ensures it covers the width */
+    min-height: 100%; /* Ensures it covers the height */
+    width: auto; /* Maintains aspect ratio */
+    height: auto; /* Maintains aspect ratio */
+    z-index: -2; /* Places it behind other content */
+    filter: blur(24px); /* Adjust blur level here */
+}
+
+#container-1 {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#container-2 {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.title-text {
+    font-size: 66px;
+
+    background: linear-gradient(45deg, #FF0000, #FF8000, #FFFF00, #80FF00, #00FF00, #00FF80, #00FFFF, #0080FF, #0000FF, #8000FF, #FF00FF, #FF0080);
+    background-size: 400%; /* Increase for smoother animation */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+
+    animation: gradient-animation-title 5s ease infinite;
+
+    border: solid rgba(255, 255, 255, 0.11);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; /* Start position */
+    }
+    25% {
+        background-position: 50% 50%; /* Midway point */
+    }
+    50% {
+        background-position: 100% 50%; /* End position */
+    }
+    75% {
+        background-position: 50% 50%; /* Return to midway */
+    }
+    100% {
+        background-position: 0% 50%; /* Back to start */
+    }
+}
+
+@keyframes gradient-animation-title {
+    0% {
+        background-position: 0% 50%; /* Start position */
+        font-size: 50px;
+    }
+    25% {
+        background-position: 50% 50%; /* Midway point */
+    }
+    50% {
+        background-position: 100% 50%; /* End position */
+        font-size: 66px;
+    }
+    75% {
+        background-position: 50% 50%; /* Return to midway */
+    }
+    100% {
+        background-position: 0% 50%; /* Back to start */
+        font-size: 50px;
+    }
+}
+
+
+
+.t1 {
+    color: white;
+
+    font-size: 26px;
+
+    background: linear-gradient(45deg, #FF0000, #FF8000, #FFFF00, #80FF00, #00FF00, #00FF80, #00FFFF, #0080FF, #0000FF, #8000FF, #FF00FF, #FF0080);
+    background-size: 400%; /* Increase for smoother animation */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+    animation: gradient-animation 8s ease infinite;
+
+    border: solid rgba(255, 255, 255, 0.11);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+#GFied-text {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    color: white;
+
+    font-size: 22px;
+
+    background: linear-gradient(45deg, #FF0000, #FF8000, #FFFF00, #80FF00, #00FF00, #00FF80, #00FFFF, #0080FF, #0000FF, #8000FF, #FF00FF, #FF0080);
+    background-size: 400%; /* Increase for smoother animation */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+    animation: gradient-animation 8s ease infinite;
+
+    border: solid rgba(255, 255, 255, 0.11);
+    padding: 5px 10px;
+    border-radius: 15px;
+
+    transition: font-size 0.3s ease-in-out;
+}
+
+#GFied-text:hover {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+
+
+
+#GFy-submit {
+    position: relative;
+    padding: 5px 10px;
+    font-size: 26px;
+    background-color: transparent; /* Transparent background */
+
+    border: solid rgba(255, 255, 255, 0.11);
+    border-radius: 15px;
+
+    cursor: pointer;
+    overflow: hidden; /* Hide overflow for pseudo-elements */
+
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background: linear-gradient(45deg, #FF0000, #FF8000, #FFFF00, #80FF00, #00FF00, #00FF80, #00FFFF, #0080FF, #0000FF, #8000FF, #FF00FF, #FF0080);
+    background-size: 400%; /* Increase for smoother animation */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+    animation: gradient-animation 8s ease infinite;
+
+    transition: font-size 0.3s ease-in-out;
+}
+
+#GFy-submit:hover {
+    font-size: 32px;
+}
+
+#typed-text {
+    background: linear-gradient(45deg, #FF0000, #FF8000, #FFFF00, #80FF00, #00FF00, #00FF80, #00FFFF, #0080FF, #0000FF, #8000FF, #FF00FF, #FF0080);
+    background-size: 400%; /* Increase for smoother animation */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+    animation: gradient-animation 8s ease infinite;
+
+    background-color: rgba(0, 0, 0, 0); 
+    border: solid rgba(255, 255, 255, 0.11);
+    border-radius: 15px;
+    padding: 5px 10px;
+    outline: none;
+
+    width: 350px;
+    height: 150px;
+    max-width: 600px; /* Maximum width */
+    max-height: 240px; /* Maximum height */
+}
+
+#reducelag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: transparent; /* Transparent background */
+
+    border: solid rgba(255, 255, 255, 0.11);
+    border-radius: 15px;
+
+    cursor: pointer;
+    overflow: hidden; /* Hide overflow for pseudo-elements */
+
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background: linear-gradient(45deg, #FF0000, #FF8000, #FFFF00, #80FF00, #00FF00, #00FF80, #00FFFF, #0080FF, #0000FF, #8000FF, #FF00FF, #FF0080);
+    background-size: 400%; /* Increase for smoother animation */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+    animation: gradient-animation 8s ease infinite;
+
+    transition: font-size 0.3s ease-in-out;
+}
+
+#reducelag:hover {
+    font-size: 22px;
+}

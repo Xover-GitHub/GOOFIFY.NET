@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOFIFY</title>
+
+    <link href="styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="BGvideo" autoplay muted loop>
+        <source src="resources/bg-vid.mp4" type="video/mp4">
+        Your Browser Is Not Up To Videos :[
+    </video>
+
+    <div id="container-1">
+        <h1 class="title-text">GOOFIFY</h1>
+
+        <button id="reducelag">Disable BG Animation</button>
+
+        <div id="container-2">
+            <p class="t1">Enter Your Text Here:</p>
+            <textarea id="typed-text" name="sst" rows="12" cols="80" maxlength="450" placeholder="Example Text :P (Maximum 600 symbols) (tap/click on generated text to copy it)"></textarea>
+            <button id="GFy-submit">GOOFIFY!</button>
+        </div>
+        
+        <p id="GFied-text">Your Goofified text will appear here :3</p>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
